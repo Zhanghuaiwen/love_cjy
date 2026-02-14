@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffc0cb;
+  font-size: 20px;
+  font-family: "微软雅黑", "宋体", sans-serif;
+  color: #000000;
+  overflow: auto;
+}
+
+a {
+  color: #000;
+  font-size: 14px;
+}
+
+#main {
+  width: 100%;
+}
+
+#wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+  margin-top: 10px;
+}
+
+#text {
+  width: 400px;
+  height: 425px;
+  left: 60px;
+  top: 80px;
+  position: absolute;
+}
+
+#code {
+  display: none;
+  font-size: 16px;
+}
+
+#clock-box {
+  position: absolute;
+  left: 60px;
+  top: 550px;
+  font-size: 28px;
+  display: none;
+}
+
+#clock-box a {
+  font-size: 28px;
+  text-decoration: none;
+}
+
+#clock {
+  margin-left: 48px;
+}
+
+#clock .digit {
+  font-size: 64px;
+}
+
+#canvas {
+  margin: 0 auto;
+  width: 1100px;
+  height: 680px;
+}
+
+#error {
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+
+.hand {
+  cursor: pointer;
+}
+
+.say {
+  margin-left: 5px;
+}
+
+.space {
+  margin-right: 150px;
+}
+.scrollable-text {
+  width: 420px; /* 宽度与 #text 匹配 */
+  max-height: 450px; /* 最大高度，内容超出会滚动 */
+  height: 450px;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  overflow-y: auto; /* 竖向滚动 */
+  overflow-x: hidden; /* 禁止横向滚动 */
+  white-space: normal; /* 允许自动换行 */
+  background: rgb(244, 227, 40);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  color: #000;
+  display: block;
+  text-align: left;
+}
+
+/* WebKit 浏览器自定义滚动条，更好看一些 */
+.scrollable-text::-webkit-scrollbar {
+  width: 10px;
+}
+.scrollable-text::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.scrollable-text::-webkit-scrollbar-track {
+  background: transparent;
+}
